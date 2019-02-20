@@ -7,8 +7,8 @@ public class MyAddTest
 	@Test
 	public void testAddcart() 
 	{
-		Cart as = new Cart() ;
-		assertTrue(0 == as.getTotal()) ;
+		Cart ass = new Cart() ;
+		assertTrue(0 == ass.getTotal()) ;
 	}
 
 	@Test
