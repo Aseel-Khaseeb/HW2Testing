@@ -21,9 +21,9 @@
         </target>
         
  <path id="NecessaryLibraries">
-        <pathelement location="./laybraries/junit-4.12.jar"/>
+        <pathelement location="./Lib/junit-4.12.jar"/>
         <!--matcher-->
-        <pathelement location="./laybraries/hamcrest-core-1.3.jar"/>
+        <pathelement location="./Lib/hamcrest-core-1.3.jar"/>
     </path>
     
         
