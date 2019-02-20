@@ -1,7 +1,7 @@
 <project default="compile">
 
-<property name ="src.java.dir" location=".//"/> 
-<property name ="src.test.dir" location="./src/main/test"/>
+<property name ="src.java.dir" location="./src"/> 
+<property name ="src.test.dir" location="./src"/>
 <property name ="result.dir" location="./target"/>
 <property name ="result.javaclasses.dir" location="${result.dir}/classes"/>
 <property name ="result.testclasses.dir" location="${result.dir}/testclasses"/>
@@ -15,15 +15,15 @@
 
 <target name ="jar" depends ="compile">
           <jar destfile="${result.jar.file}">
-                   <fileset dir ="${result.jar.file}"> 
+                   <fileset dir ="${result.javaclasses.dir}"> 
            </fileset>
               </jar>
         </target>
         
  <path id="NecessaryLibraries">
-        <pathelement location="E:\jenkin_files_download\workspace\Testing\laybraries\jar_files\junit-4.12.jar"/>
+        <pathelement location="./laybraries/junit-4.12.jar"/>
         <!--matcher-->
-        <pathelement location="E:\jenkin_files_download\workspace\Testing\laybraries\jar_files\hamcrest-core-1.3.jar"/>
+        <pathelement location="./laybraries/hamcrest-core-1.3.jar"/>
     </path>
     
         
