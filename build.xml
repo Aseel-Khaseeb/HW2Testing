@@ -29,7 +29,7 @@
         
     <target name="compile-testcases" depends="compile">
         <mkdir dir="${result.testclasses.dir}"/>
-        <javac srcdir="${src.test.dir}"  destdir="${result.testclasses.dir}" debug="true" includeantruntime="false">
+        <javac srcdir="${src.test.dir}"  destdir="${result.testclasses.dir}" debug="true" includeantruntime="false" classpath="E:\eclipse files\eclipse file\HW2testing\testscr\junit-4.12.jar>
             <classpath>
                 
                 <path refid="NecessaryLibraries"/>
