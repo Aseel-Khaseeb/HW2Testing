@@ -18,9 +18,9 @@ public class Cart
 	{
 		int total = 0;
 		int i = getSize();
-		for(int x = 0; x<i; x++)
+		for(int j = 0; j<i; j++)
 		{
-			total += prodList.get(x).getPrice();
+			total += prodList.get(j).getPrice();
 		}
 		return total;
 	}

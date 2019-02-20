@@ -6,8 +6,8 @@ public class MyAdd
 	
 	public void  addcart() 
 	{	
-		Cart x = new Cart() ;
-		add1.add(x) ; 
+		Cart l = new Cart() ;
+		add1.add(l) ; 
 	}
 	
 	public void addProduct(int cart , int price , String name, int count) 

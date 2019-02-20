@@ -14,13 +14,13 @@ public class MyAddTest
 	@Test
 	public void testAddProduct() 
 	{
-		MyAdd x = new MyAdd() ;
-		x.addcart();
-		x.addProduct(0, 127,"Java Book", 1);
-		assertTrue(1==x.add1.get(0).prodList.size()) ;
-		assertTrue(127 == x.add1.get(0).prodList.get(0).getPrice()) ;
-		x.add1.get(0).prodList.clear();
-		x.add1.clear();
+		MyAdd r = new MyAdd() ;
+		r.addcart();
+		r.addProduct(0, 127,"Java Book", 1);
+		assertTrue(1==r.add1.get(0).prodList.size()) ;
+		assertTrue(127 == r.add1.get(0).prodList.get(0).getPrice()) ;
+		r.add1.get(0).prodList.clear();
+		r.add1.clear();
 	}
 	
 	@Test
@@ -78,5 +78,21 @@ public class MyAddTest
 		assertFalse(600 == v.add1.get(0).getTotal()) ;	
 		v.add1.get(0).prodList.clear();
 		v.add1.clear();
+	}
+	
+	@Test
+	public void testAddProduct6() 
+	{
+		MyAdd k = new MyAdd() ; 
+		k.addcart();
+		k.addProduct(0, 127,"Java Book", 1);
+		k.addProduct(0, 100,"Web desing Book", 1);
+		k.addProduct(0, 120,"C++ Book", 1);
+		k.addProduct(0, 300,"Database Book", 1);
+		k.addProduct(0, 200,"DataStructure Book", 1);
+		assertFalse(7==k.add1.get(0).prodList.size()) ;
+		assertFalse(600 == k.add1.get(0).getTotal()) ;	
+		k.add1.get(0).prodList.clear();
+		k.add1.clear();
 	}
 }
